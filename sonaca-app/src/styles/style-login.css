@@ -1,0 +1,133 @@
+body {
+  font-family: 'Comfortaa', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #97e4a9;
+  /* background-color: #98ffb0; */
+}
+
+.container {
+  width: 600px;
+  height: 850px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 180px;
+  /* margin-bottom: 5px; */
+  align-self: center;
+}
+
+.partbook {
+  width: auto;
+  height: 80px;
+  /* margin-bottom: 10px; */
+  align-self: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+label {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  font-size: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: end;
+  width: 50%;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  font-size: 26px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 53%;
+  cursor: pointer;
+  align-self: right;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Loader */
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #28a745;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.screen {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideOut {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}

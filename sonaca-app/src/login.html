@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonaca App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style-login.css">
+  <style>
+    .slide-in-right {
+      animation: slideInRight 1s backwards;
+    }
+    @keyframes slideInRight {
+      from { transform: translateX(100%); }
+      to { transform: translateX(0); }
+    }
+  </style>
+</head>
+
+<body class="slide-in-right">
+  <div class="screen">
+    <div class="container">
+        <div class="logos">
+            <img src="./logos/sonaca-logo.png" class="logo" alt="sonaca-logo">
+            <img src="./logos/partbook-logo.png" class="partbook" alt="partbook-logo">
+        </div>
+        <form class="form">
+          <label for="employeeNumber">Número de empleado</label>
+          <input type="text" id="employeeNumber" required>
+
+          <label for="partNumber">Ingrese número de parte o utilice el escáner de código de barras</label>
+          <input type="text" id="partNumber" required>
+
+          <label for="processNumber">Ingrese número de proceso o utilice el escáner de código de barras</label>
+          <input type="text" id="processNumber" required>
+
+          <label for="releaseNumber">Ingrese número de release o utilice el escáner de código de barras</label>
+          <input type="text" id="releaseNumber" required>
+
+          <button type="button" id="nextButton">Siguiente</button>
+        </form>
+        <div class="loader hidden" id="loader"></div>
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
