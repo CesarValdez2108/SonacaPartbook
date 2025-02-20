@@ -27,11 +27,12 @@ document.getElementById('nextButton').addEventListener('click', function () {
   const employeeNumber = document.getElementById('employeeNumber').value;
   const partNumber = document.getElementById('partNumber').value;
   const processNumber = document.getElementById('processNumber').value;
-  const releaseNumber = document.getElementById('releaseNumber').value;
+  // const releaseNumber = document.getElementById('releaseNumber').value;
   const loader = document.getElementById('loader');
 
-  if (employeeNumber && partNumber && processNumber && releaseNumber) {
-    // Save part number to local storage
+  if (employeeNumber && partNumber && processNumber) {
+    // if (employeeNumber && partNumber && processNumber && releaseNumber) {
+      // Save part number to local storage
     localStorage.setItem('partNumber', partNumber);
 
     // Show the loader

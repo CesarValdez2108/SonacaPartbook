@@ -35,6 +35,7 @@ document.getElementById("nextProcess").addEventListener("click", function() {
 const partNumber = localStorage.getItem('partNumber');
 if (partNumber) {
   document.querySelector('.flap-text').innerText = partNumber;
+  document.querySelector('.title').innerText = partNumber;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
